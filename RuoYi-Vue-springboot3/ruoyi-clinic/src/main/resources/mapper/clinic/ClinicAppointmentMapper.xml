@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.clinic.mapper.ClinicAppointmentMapper">
+
+    <resultMap id="ClinicAppointmentResult" type="com.ruoyi.clinic.domain.ClinicAppointment">
+        <id     property="appointmentId" column="appointment_id"/>
+        <result property="appointmentNo" column="appointment_no"/>
+        <result property="patientId"     column="patient_id"/>
+        <result property="scheduleId"    column="schedule_id"/>
+        <result property="departmentId"  column="department_id"/>
+        <result property="doctorId"      column="doctor_id"/>
+        <result property="visitDate"     column="visit_date"/>
+        <result property="period"        column="period"/>
+        <result property="startAt"       column="start_at"/>
+        <result property="status"        column="status"/>
+        <result property="activeKey"     column="active_key"/>
+        <result property="cancelTime"    column="cancel_time"/>
+        <result property="cancelReason"  column="cancel_reason"/>
+        <result property="source"        column="source"/>
+        <result property="operatorId"    column="operator_id"/>
+        <result property="createBy"      column="create_by"/>
+        <result property="createTime"    column="create_time"/>
+        <result property="updateBy"      column="update_by"/>
+        <result property="updateTime"    column="update_time"/>
+    </resultMap>
+
+    <sql id="selectVo">
+        SELECT appointment_id, appointment_no, patient_id, schedule_id, department_id,
+               doctor_id, visit_date, period, start_at, status, active_key,
+               cancel_time, cancel_reason, source, operator_id,
+               create_by, create_time, update_by, update_time
+        FROM clinic_appointment
+    </sql>
+
+    <select id="selectById" parameterType="Long" resultMap="ClinicAppointmentResult">
+        <include refid="selectVo"/> WHERE appointment_id = #{appointmentId}
+    </select>
+
+    <select id="selectList" parameterType="com.ruoyi.clinic.domain.ClinicAppointment" resultMap="ClinicAppointmentResult">
+        <include refid="selectVo"/>
+        <where>
+            <if test="patientId != null">AND patient_id = #{patientId}</if>
+            <if test="departmentId != null">AND department_id = #{departmentId}</if>
+            <if test="doctorId != null">AND doctor_id = #{doctorId}</if>
+            <if test="scheduleId != null">AND schedule_id = #{scheduleId}</if>
+            <if test="visitDate != null">AND visit_date = #{visitDate}</if>
+            <if test="status != null and status != ''">AND status = #{status}</if>
+            <if test="appointmentNo != null and appointmentNo != ''">AND appointment_no = #{appointmentNo}</if>
+        </where>
+        ORDER BY create_time DESC
+    </select>
+
+    <insert id="insert" parameterType="com.ruoyi.clinic.domain.ClinicAppointment"
+            useGeneratedKeys="true" keyProperty="appointmentId">
+        INSERT INTO clinic_appointment
+            (appointment_no, patient_id, schedule_id, department_id, doctor_id,
+             visit_date, period, start_at, status, active_key,
+             source, operator_id, create_by, create_time)
+        VALUES
+            (#{appointmentNo}, #{patientId}, #{scheduleId}, #{departmentId}, #{doctorId},
+             #{visitDate}, #{period}, #{startAt}, #{status}, #{activeKey},
+             #{source}, #{operatorId}, #{createBy}, NOW())
+    </insert>
+
+    <update id="cancel">
+        UPDATE clinic_appointment
+        SET status        = 'CANCELLED',
+            active_key    = NULL,
+            cancel_time   = NOW(),
+            cancel_reason = #{cancelReason},
+            operator_id   = #{operatorId},
+            update_time   = NOW()
+        WHERE appointment_id = #{appointmentId}
+          AND status         = 'BOOKED'
+    </update>
+
+    <delete id="deleteById" parameterType="Long">
+        DELETE FROM clinic_appointment WHERE appointment_id = #{appointmentId}
+    </delete>
+
+    <delete id="deleteByIds" parameterType="String">
+        DELETE FROM clinic_appointment WHERE appointment_id IN
+        <foreach collection="array" item="id" open="(" separator="," close=")">#{id}</foreach>
+    </delete>
+</mapper>

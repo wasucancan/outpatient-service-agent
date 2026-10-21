@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.clinic.mapper.ClinicUserPatientBindMapper">
+
+    <resultMap id="ClinicUserPatientBindResult" type="com.ruoyi.clinic.domain.ClinicUserPatientBind">
+        <id     property="bindId"     column="bind_id"/>
+        <result property="userId"     column="user_id"/>
+        <result property="patientId"  column="patient_id"/>
+        <result property="bindType"   column="bind_type"/>
+        <result property="verifiedBy" column="verified_by"/>
+        <result property="verifyTime" column="verify_time"/>
+        <result property="status"     column="status"/>
+        <result property="createBy"   column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy"   column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <sql id="selectVo">
+        SELECT bind_id, user_id, patient_id, bind_type, verified_by, verify_time,
+               status, create_by, create_time, update_by, update_time
+        FROM clinic_user_patient_bind
+    </sql>
+
+    <select id="selectById" parameterType="Long" resultMap="ClinicUserPatientBindResult">
+        <include refid="selectVo"/> WHERE bind_id = #{bindId}
+    </select>
+
+    <select id="selectList" parameterType="com.ruoyi.clinic.domain.ClinicUserPatientBind" resultMap="ClinicUserPatientBindResult">
+        <include refid="selectVo"/>
+        <where>
+            <if test="userId != null">AND user_id = #{userId}</if>
+            <if test="patientId != null">AND patient_id = #{patientId}</if>
+            <if test="status != null and status != ''">AND status = #{status}</if>
+        </where>
+    </select>
+
+    <select id="selectActiveByUserId" parameterType="Long" resultMap="ClinicUserPatientBindResult">
+        <include refid="selectVo"/> WHERE user_id = #{userId} AND status = '0' LIMIT 1
+    </select>
+
+    <insert id="insert" parameterType="com.ruoyi.clinic.domain.ClinicUserPatientBind"
+            useGeneratedKeys="true" keyProperty="bindId">
+        INSERT INTO clinic_user_patient_bind
+            (user_id, patient_id, bind_type, verified_by, verify_time, status, create_by, create_time)
+        VALUES
+            (#{userId}, #{patientId}, #{bindType}, #{verifiedBy}, NOW(), '0', #{createBy}, NOW())
+    </insert>
+
+    <update id="update" parameterType="com.ruoyi.clinic.domain.ClinicUserPatientBind">
+        UPDATE clinic_user_patient_bind
+        <set>
+            <if test="bindType != null">bind_type = #{bindType},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="verifiedBy != null">verified_by = #{verifiedBy},</if>
+            update_by = #{updateBy}, update_time = NOW()
+        </set>
+        WHERE bind_id = #{bindId}
+    </update>
+
+    <delete id="deleteById" parameterType="Long">
+        DELETE FROM clinic_user_patient_bind WHERE bind_id = #{bindId}
+    </delete>
+</mapper>

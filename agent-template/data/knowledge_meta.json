@@ -1,0 +1,15 @@
+{
+  "num_docs": 18,
+  "num_chunks": 67,
+  "departments": {
+    "公共": 47,
+    "内科": 4,
+    "外科": 3,
+    "儿科": 4,
+    "妇科": 3,
+    "中医科": 3,
+    "全科医学科": 3
+  },
+  "chunks_path": "C:\\Users\\25301\\Desktop\\qing-feng-clinic\\agent-template\\data\\knowledge_chunks.jsonl",
+  "bm25_path": "C:\\Users\\25301\\Desktop\\qing-feng-clinic\\agent-template\\data\\bm25_index.pkl"
+}

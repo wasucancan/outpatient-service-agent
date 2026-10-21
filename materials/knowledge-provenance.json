@@ -1,0 +1,303 @@
+[
+  {
+    "file": "01-初诊就诊流程.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/01-门诊初诊与到院流程.md",
+        "heading": "第一次使用青枫门诊如何挂号",
+        "department": null,
+        "sha256": "d21fe3a58d0e93f3cddc186059f272f61c01c6e93aa7e74928b8f4ccb2913fe3",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/01-门诊初诊与到院流程.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "1faabdb78d4c2cdb2567a4bcc742482e5bdb94e71b971a08067e8ea7b60dbb08"
+  },
+  {
+    "file": "02-挂号规则与号源查询.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/03-门诊挂号限约与取消规则.md",
+        "heading": "挂号与号源",
+        "department": null,
+        "sha256": "96335bdebd933ea9e8898cef8732f56a74ceabb26dccb27ff95bef5b0b0566fa",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/03-门诊挂号限约与取消规则.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "dafc9f5da9cd3e7d2c7a3302d52f4bc2d54a17e00568c8fc390ab13b245581a7"
+  },
+  {
+    "file": "03-患者主动取消预约须知.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/03-门诊挂号限约与取消规则.md",
+        "heading": "普通主动取消：提前至少2小时",
+        "department": null,
+        "sha256": "96335bdebd933ea9e8898cef8732f56a74ceabb26dccb27ff95bef5b0b0566fa",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/03-门诊挂号限约与取消规则.md"
+      },
+      {
+        "file": "materials/dify-knowledge-import/03-门诊挂号限约与取消规则.md",
+        "heading": "超时与机构停诊",
+        "department": null,
+        "sha256": "96335bdebd933ea9e8898cef8732f56a74ceabb26dccb27ff95bef5b0b0566fa",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/03-门诊挂号限约与取消规则.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "7ef16986613a3db3c7e89b05624f44b5774150a1b9238524953d4e240a451d00"
+  },
+  {
+    "file": "04-签到候诊与接诊记录.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/01-门诊初诊与到院流程.md",
+        "heading": "到院后怎样报到",
+        "department": null,
+        "sha256": "d21fe3a58d0e93f3cddc186059f272f61c01c6e93aa7e74928b8f4ccb2913fe3",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/01-门诊初诊与到院流程.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "ae886e82180276572a6737c0e99c4eea8bcd35f4caf525ab965f4673039e7808"
+  },
+  {
+    "file": "05-临时停诊与改约服务.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/07-门诊停诊通知与人工处置.md",
+        "heading": "医生临时停诊后怎样处理",
+        "department": null,
+        "sha256": "b18a0e100cd19173d5d61df8e982dfac0a0defdeea9a38e1a8388296d093e8f3",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/07-门诊停诊通知与人工处置.md"
+      },
+      {
+        "file": "materials/dify-knowledge-import/07-门诊停诊通知与人工处置.md",
+        "heading": "取消与改约",
+        "department": null,
+        "sha256": "b18a0e100cd19173d5d61df8e982dfac0a0defdeea9a38e1a8388296d093e8f3",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/07-门诊停诊通知与人工处置.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "093ed51b95831d98282b01fdafb035348d8621e7693bb99e0ce3c5370679d246"
+  },
+  {
+    "file": "06-医保凭证与结算咨询.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/06-门诊医保材料与结算边界.md",
+        "heading": "本系统能记录什么",
+        "department": null,
+        "sha256": "e67521b8ae7f7bc9b747530b9fa922e2aca44272ae002da1b3b5157ffc5e85a5",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/06-门诊医保材料与结算边界.md"
+      },
+      {
+        "file": "materials/dify-knowledge-import/06-门诊医保材料与结算边界.md",
+        "heading": "就诊前可以准备什么",
+        "department": null,
+        "sha256": "e67521b8ae7f7bc9b747530b9fa922e2aca44272ae002da1b3b5157ffc5e85a5",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/06-门诊医保材料与结算边界.md"
+      },
+      {
+        "file": "materials/dify-knowledge-import/06-门诊医保材料与结算边界.md",
+        "heading": "异地、特殊待遇和费用",
+        "department": null,
+        "sha256": "e67521b8ae7f7bc9b747530b9fa922e2aca44272ae002da1b3b5157ffc5e85a5",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/06-门诊医保材料与结算边界.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "622669fa110de4aa2562202cb93acf7fc34f359bbdb749b1cb0ef928d7ff2f1e"
+  },
+  {
+    "file": "07-老年人与无障碍协助.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/05-门诊特殊人群人工协助.md",
+        "heading": "不会使用手机也可由前台协助",
+        "department": null,
+        "sha256": "17746cbe34792bd70a6a7e8dbd22d8d75c4ecf75cae9fbe53a7b72b973035195",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/05-门诊特殊人群人工协助.md"
+      },
+      {
+        "file": "materials/dify-knowledge-import/05-门诊特殊人群人工协助.md",
+        "heading": "儿童与监护人",
+        "department": null,
+        "sha256": "17746cbe34792bd70a6a7e8dbd22d8d75c4ecf75cae9fbe53a7b72b973035195",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/05-门诊特殊人群人工协助.md"
+      },
+      {
+        "file": "materials/dify-knowledge-import/05-门诊特殊人群人工协助.md",
+        "heading": "老年人、孕产妇和其他需要帮助者",
+        "department": null,
+        "sha256": "17746cbe34792bd70a6a7e8dbd22d8d75c4ecf75cae9fbe53a7b72b973035195",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/05-门诊特殊人群人工协助.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "ca0612841309fbe2ef0188c4277744d873395f0ee7800ed6aa0baf86d7ba0320"
+  },
+  {
+    "file": "08-患者身份与隐私.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/08-门诊隐私与AI只读问答边界.md",
+        "heading": "医疗问题边界",
+        "department": null,
+        "sha256": "7de5826a4e20374513f244ee08afbd046982d29d819c596af457aa276736c1c9",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/08-门诊隐私与AI只读问答边界.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "f6c1911321faf2f0ed06437b7be8f62f87495d36c2cbe6142616462c0092fadb"
+  },
+  {
+    "file": "09-急症线下求助入口.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/05-门诊特殊人群人工协助.md",
+        "heading": "紧急情况",
+        "department": null,
+        "sha256": "17746cbe34792bd70a6a7e8dbd22d8d75c4ecf75cae9fbe53a7b72b973035195",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/05-门诊特殊人群人工协助.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "56b9eee5357e0d40d67d813a52222a87198b2ae0fd728a049ed228233f313fed"
+  },
+  {
+    "file": "10-检查报告与复诊咨询.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/02-门诊复诊与报告回诊指引.md",
+        "heading": "复诊前准备",
+        "department": null,
+        "sha256": "148edadbc7f13b3b0aa719e16e4a8a2eea2de9e0d57c1ed062d04d4e5c7ccf3b",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/02-门诊复诊与报告回诊指引.md"
+      },
+      {
+        "file": "materials/dify-knowledge-import/02-门诊复诊与报告回诊指引.md",
+        "heading": "同日同科室与回诊边界",
+        "department": null,
+        "sha256": "148edadbc7f13b3b0aa719e16e4a8a2eea2de9e0d57c1ed062d04d4e5c7ccf3b",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/02-门诊复诊与报告回诊指引.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "4b3c7606cd131e36921c2ce4e4c9590a5eabae0467672cda2e6d038f4660e774"
+  },
+  {
+    "file": "11-知识引用与人工转交.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/08-门诊隐私与AI只读问答边界.md",
+        "heading": "医疗问题边界",
+        "department": null,
+        "sha256": "7de5826a4e20374513f244ee08afbd046982d29d819c596af457aa276736c1c9",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/08-门诊隐私与AI只读问答边界.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "c83bc389f4d3d2b791efc0e26297371b3949ebcc09ebed55b198b2eb8ea98c77"
+  },
+  {
+    "file": "12-科室选择与预约确认.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md",
+        "heading": "青枫门诊科室与楼层",
+        "department": null,
+        "sha256": "a351dee1d1f402d1f788e15e8bb793151e17c0003a481159055ce50139d73e33",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "49230653ee1e345e3526fb5937bd90b418e38e4516f04d0fb00ca0055f79ddfe"
+  },
+  {
+    "file": "13-内科科室介绍.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md",
+        "heading": "青枫门诊科室与楼层",
+        "department": "内科",
+        "sha256": "a351dee1d1f402d1f788e15e8bb793151e17c0003a481159055ce50139d73e33",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "aea742ae19d56f13769cc333a59a5980aa6ff678f1c21bd4b0ef5221dbc5a56a"
+  },
+  {
+    "file": "14-外科科室介绍.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md",
+        "heading": "青枫门诊科室与楼层",
+        "department": "外科",
+        "sha256": "a351dee1d1f402d1f788e15e8bb793151e17c0003a481159055ce50139d73e33",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "2dbf270daf36d6eedfe62187d04e5fc382f868ce91b6f582ae8f1414a8aeb408"
+  },
+  {
+    "file": "15-儿科科室介绍.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md",
+        "heading": "青枫门诊科室与楼层",
+        "department": "儿科",
+        "sha256": "a351dee1d1f402d1f788e15e8bb793151e17c0003a481159055ce50139d73e33",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "aacaa1629fea091c040057b8cbb6d76505db8763045475b1550783d31b2708b6"
+  },
+  {
+    "file": "16-妇科科室介绍.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md",
+        "heading": "青枫门诊科室与楼层",
+        "department": "妇科",
+        "sha256": "a351dee1d1f402d1f788e15e8bb793151e17c0003a481159055ce50139d73e33",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "48f366b6a2db4791d5be43f0c7d5879ad9ea893b7f0b30f00f6ba6b0b472d3f1"
+  },
+  {
+    "file": "17-中医科科室介绍.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md",
+        "heading": "青枫门诊科室与楼层",
+        "department": "中医科",
+        "sha256": "a351dee1d1f402d1f788e15e8bb793151e17c0003a481159055ce50139d73e33",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "b63c9db082c1f1689e974ab5ed12f282510d5d42850cc96aeb82c2a1b155ca60"
+  },
+  {
+    "file": "18-全科医学科科室介绍.md",
+    "shared_sources": [
+      {
+        "file": "materials/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md",
+        "heading": "青枫门诊科室与楼层",
+        "department": "全科医学科",
+        "sha256": "a351dee1d1f402d1f788e15e8bb793151e17c0003a481159055ce50139d73e33",
+        "upstream_file": "proj2-2-OCMS/base/dify-knowledge-import/04-门诊科室楼层与医生资料边界.md"
+      }
+    ],
+    "native_supplement": "[下发文件]考核-需求开发文档.md",
+    "sha256": "8fec6023568c6ad81767eba336d50ec9955c7f89dca77d9c5413738496965714"
+  }
+]
